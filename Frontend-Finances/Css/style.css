@@ -1,0 +1,199 @@
+/*========================================================================================================================*/
+/*====================================================Pré Definições======================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --primary-color: #89E82A;
+  --bg-color: #191919;
+  --bg-components: #272727;
+  --secondary-color: #842D7C;
+  --variation-primary: #468B01;
+  --variation-secondary: #FF94F4;
+  --font-white: #FFFFFF;
+  --gray: #424242;
+  --padding-chips: 3px 15px;
+  --roboto: "Roboto", sans-serif;
+  --weight-normal: 400;
+  --weight-bold: 700;
+}
+
+* {
+    font-family: var(--roboto);
+    user-select: none; /* ← impede seleção */
+    -webkit-user-select: none; /* suporte Safari */
+    -ms-user-select: none; /* suporte antigo IE */
+}
+
+/*====================================================Pré Definições======================================================*/
+/*========================================================================================================================*/
+
+
+
+
+/*========================================================================================================================*/
+/*====================================================Master Page=========================================================*/
+
+main {
+    background-color: var(--bg-color);
+    height: 100vh;
+}
+
+.bg-color {
+    background-color: var(--bg-color) !important;
+}
+
+.data-atual {
+    position: fixed;
+    top: 5px;
+    right: 12px;
+    background-color: var(--bg-components);
+    border-radius: 20px;
+    width: fit-content;
+    color: var(--primary-color);
+    padding: var(--padding-chips);
+    font-size: 12px;
+    display: flex;
+}
+
+.circle-status {
+    display: block;
+    width: 4px;
+    height: 4px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 3px;
+}
+
+/*====================================================Master Page=========================================================*/
+/*========================================================================================================================*/
+
+
+/*========================================================================================================================*/
+/*=======================================================Footer===========================================================*/
+
+Footer {
+    background-color: var(--bg-components);
+    width: calc(100vw + 20px);
+    left: -10px !important;
+    border-radius: 50px 50px 0px 0px ;
+    height: 82px;
+}
+.circle-selected {
+    width: 71px;
+    height: 71px;
+    border: 5px solid var(--bg-color);
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    position: absolute;
+    bottom: 40px;
+}
+.item-footer {
+    color: var(--gray);
+    font-size: 33px;
+    transition: 500ms;
+}
+.item-selected {
+    color: var(--bg-color) !important;
+    position: relative;
+    bottom: 35px;
+    animation: subirIcone forwards 0.3s;
+}
+@keyframes subirIcone {
+    from {
+        bottom: 0;
+    }
+    to {
+        bottom: 35px;
+    }
+}
+@keyframes descerIcone {
+    from {
+        bottom: 35px;
+    }
+    to {
+        bottom: 0px;
+    }
+}
+.circle-selected {
+  transition: left 0.2s ease;
+}
+
+/*=======================================================Footer===========================================================*/
+/*========================================================================================================================*/
+
+
+
+/*========================================================================================================================*/
+/*====================================================Componentes=========================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.dropdown {
+    background-color: var(--bg-color);
+    border: none;
+    font-size: 15px;
+    color: var(--font-white);
+    padding: var(--padding-chips);
+    border-radius: 20px;
+    transition: 100ms;
+}
+.iconDropdown {
+    width: 7px;
+}
+.dropdown:active {
+    transition: 300ms;
+    background-color: var(--bg-components);
+    transform: scale(0.98);
+}
+
+/*====================================================Componentes=========================================================*/
+/*========================================================================================================================*/
+
+
+ .header-dashboard {
+    background-color: var(--bg-components);
+    height: 200px;
+    width: 100%;
+}
+
+.area-dashboard {
+    height: calc(100vh - 350px); 
+    width: calc(100% - 2rem);
+    background-color: var(--bg-components);
+}
+
+
+
+.custom-radio-group {
+  background-color: var(--bg-color);
+  padding: 10px;
+  border-radius: 20px !important;
+}
+
+.custom-btn {
+  color: limegreen;
+  border: 2px solid limegreen;
+  border-radius: 20px;
+  margin: 0 5px;
+  padding: 5px 12px;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  font-weight: 200;
+  font-size: 12px !important;
+  word-wrap: break-word !important;
+  width: fit-content !important;
+}
+
+.btn-check:checked + .custom-btn {
+  color: #d63384; 
+  
+  border-color: #d63384;
+}
+
+.btn-check:checked + .custom-btn:hover,
+.custom-btn:hover {
+  filter: brightness(1.2);
+} 
+/*Menu radio dashboard*/
