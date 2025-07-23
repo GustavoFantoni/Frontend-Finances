@@ -157,14 +157,55 @@ Footer {
     height: 200px;
     width: 100%;
 }
+.btn-header {
+    width: fit-content !important;
+    background-color: var(--secondary-color);
+    border: none;
+    color: var(--font-white);
+}
+.icon-btn-header {
+    margin: 0 4px;
+    position: relative;
+    top: 3px;
+}
+.slider-header {
+    height: 10px;
+    width: calc(100% - 20px);
+    margin: 0 10px 10px 10px;
+}
+.left-slider-header {
+    width: 50%;
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 20px 0px 0px 20px;
+    float: left;
+}
+.right-slider-header {
+    width: 50%;
+    height: 100%;
+    background-color: var(--secondary-color);
+    border-radius: 0px 20px 20px 0px;
+    float: right;
+}
 
 .area-dashboard {
     height: calc(100vh - 350px); 
     width: calc(100% - 2rem);
     background-color: var(--bg-components);
 }
+.saldo {
+    color: var(--primary-color);
+    font-size: 36px;
+    font-weight: var(--weight-normal);
+    margin-top: 10px;
+}
+.rs {
+    color: var(--primary-color);
+    font-size: 10px;
+    font-weight: var(--weight-bold);
+    margin-right: 5px;
 
-
+}
 
 .custom-radio-group {
   background-color: var(--bg-color);
