@@ -133,7 +133,7 @@ Footer {
 .dropdown {
     background-color: var(--bg-color);
     border: none;
-    font-size: 15px;
+    font-size: 10px;
     color: var(--font-white);
     padding: var(--padding-chips);
     border-radius: 20px;
@@ -167,6 +167,9 @@ Footer {
     margin: 0 4px;
     position: relative;
     top: 3px;
+}
+.btn-header {
+    font-size: 12px;
 }
 .slider-header {
     height: 10px;
